@@ -1,64 +1,42 @@
 # Data Science Interview Project
 
-This repository contains a simple logistic regression model demonstration for a Principal Engineer data science interview.
+This repository contains a simple data science project that demonstrates a typical machine learning workflow from data preparation to model deployment.
 
-## Setup Instructions
+## Project Structure
 
-### Checking for pip
+- `main.py`: The main script that orchestrates the entire workflow
+- `data_preparation.py`: Functions for data generation, exploration, and preparation
+- `model_training.py`: Model training and coefficient visualization functionality
+- `model_evaluation.py`: Code for evaluating model performance
+- `prediction.py`: Utilities for making predictions on new data
+- `model_artifacts/`: Directory containing saved model and preprocessing components
 
-Before starting, ensure pip is installed:
+## Getting Started
 
-1. Check if pip is installed:
-   ```
-   pip --version
-   ```
-
-2. If pip is not installed, install it:
-   - On Windows:
-     ```
-     python -m ensurepip --default-pip
-     ```
-   - On macOS/Linux:
-     ```
-     python -m ensurepip --default-pip
-     # Or use your system's package manager:
-     # sudo apt-get install python3-pip  # For Ubuntu/Debian
-     # sudo yum install python3-pip      # For CentOS/RHEL
-     ```
-
-### Using Python's Virtual Environment (venv)
-
-1. Create a virtual environment:
-   ```
-   python -m venv venv
-   ```
-
-2. Activate the virtual environment:
-   - On Windows:
-     ```
-     venv\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```
-     source venv/bin/activate
-     ```
-
-3. Install the required packages:
+1. Clone the repository
+2. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
-
-4. Launch Jupyter Notebook:
+3. Run the main script:
    ```
-   jupyter notebook
+   python main.py
    ```
 
-## Running the Notebook
+## Features
 
-Open `principal_engineer_interview.ipynb` in Jupyter to view and run the logistic regression demonstration.
+- Synthetic data generation
+- Data exploration and visualization
+- Data preprocessing and feature scaling
+- Model training and evaluation
+- Making predictions on new data
+- Model persistence for future use
 
-## Quick Setup
+## Interview Questions
 
-For convenience, you can use the setup scripts:
-- Windows: Run `setup_venv.bat`
-- macOS/Linux: Run `bash setup_venv.sh`
+Throughout the codebase, you'll find interview questions related to production engineering considerations for each phase of the machine learning workflow.
+
+## Requirements
+
+- Python 3.8+
+- Required packages are listed in `requirements.txt`
