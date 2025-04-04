@@ -1,0 +1,21 @@
+[tool.ruff]
+# Enable pycodestyle (E), Pyflakes (F), isort (I), and other rules
+line-length = 88
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+# Move settings from top-level to the lint section
+fixable = ["ALL"]  # Adjust according to your existing settings
+ignore = []  # Adjust according to your existing settings
+select = ["E", "F", "W"]  # Adjust according to your existing settings
